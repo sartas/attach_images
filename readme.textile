@@ -5,7 +5,7 @@ h3. Изменения:
 * изменен хелпер Dir (со старым хелпером плагин работать не будет)
 * поддержка SQLite (без created_date)
 
-Оригинальная версия плагина: http://frogcms.in.ua/public/plugins/attach_images.zip 
+"Оригинальная версия плагина":http://frogcms.in.ua/public/plugins/attach_images.zip
 
 h3. Как пользоваться: 
 
