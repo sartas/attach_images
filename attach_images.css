@@ -1,0 +1,93 @@
+#attach_images_list {
+	overflow:hidden;
+}
+
+#attach_images_list .item {
+	position:relative;
+	
+	float:left;
+	
+	width:80px;
+	height:80px;
+	
+	padding:3px;
+	margin-right:5px;
+	margin-bottom:5px;
+	
+	background-color:#fff;
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	line-height:80px;
+	
+	box-shadow:0 2px 2px gray;
+	-moz-box-shadow:0 2px 2px gray;
+	-webkit-box-shadow:0 2px 2px gray;
+}
+
+#attach_images_list .item img {
+	display:block;
+	
+	width:80px;
+	height:80px;
+}
+
+#attach_images_list .delete {
+	display:none;
+	
+	position:absolute;
+	top:35px;
+	left:35px;
+	line-height:15px;
+	padding:3px 6px;
+	background:#000;
+	color:#fff;
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	text-decoration:none;
+}
+
+#attach_images_list .item:hover .delete {
+	display:block;
+}
+
+#ail_add {
+	float:left;
+	
+	width:80px;
+	height:80px;
+	
+	padding:3px;
+	margin-left:5px;
+	
+	background-color:#fff;
+	
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	line-height:80px;
+	font-size:150%;
+	
+	opacity:0.5;
+}
+
+#ail_add:hover {
+	opacity:1;
+}
+
+#ail_add a {
+	display:inline-block;
+	
+	width:80px;
+	height:80px;
+	
+	text-align:center;
+	color:#000;
+	text-decoration:none;
+}
