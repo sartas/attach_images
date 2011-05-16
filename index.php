@@ -21,6 +21,9 @@ function ai_page_add_after_save_handler( $page )
 	$db = Record::getConnection();
 	
 	$db->query('UPDATE '. TABLE_PREFIX .'ai_image SET page_id="'. (int)$page_id .'" WHERE page_id="0"');
+	
+	$gallery_dir = FROG_ROOT . '/' . PUBLIC_FILES . '/gallery/';
+	rename($gallery_dir . '0', $gallery_dir . $page->id);
 }
 
 function ai_page_delete_handler( $page )

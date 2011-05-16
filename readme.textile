@@ -11,6 +11,20 @@ h3. Установка:
 
 # Заменить хелпер Dir и плагин image_resizer из папки helpers
 # Установить плагин из админки
+# Возможно надо будет заменить функцию renderJSON в Framework.php на
+
+<pre>
+    public function renderJSON($data_to_encode)
+    {
+        if (function_exists('json_encode')) {
+            return json_encode($data_to_encode);
+        } else if (class_exists('JSON')) {
+            return JSON::encode($data_to_encode);
+        } else {
+            throw new Exception('No function or class found to render JSON.');
+        }
+    }
+</pre>
 
 h3. Как пользоваться: 
 
